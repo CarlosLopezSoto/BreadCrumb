@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SbFcFiJZdTyOOzeLRwFciEcczwp1NUQ4uLM7RaO0xFyZXpwQHIgHwTDun5iAsHhL1nW+8xi9l2SUV2Tu0wIaTQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrador\\source\\repos\\BreadCrumbBlazorBootstrap4\\BreadCrumbBlazorBootstrap4\\BreadCrumbBlazorBootstrap4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

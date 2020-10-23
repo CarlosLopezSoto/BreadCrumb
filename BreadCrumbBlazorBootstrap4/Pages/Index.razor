@@ -1,0 +1,38 @@
+﻿@page "/"
+@using BreadCrumbBlazorBootstrap4.BreadCrumb
+@using BreadCrumbBlazorBootstrap4.Data
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+<BreadCrumb breadCrumbData="breadCrumbDatas"></BreadCrumb>
+
+@code
+{ 
+    public List<BreadCrumbData> breadCrumbDatas = new List<BreadCrumbData>();
+    protected override void OnInitialized()
+    {
+
+        BreadCrumbData breadCrumbData = new BreadCrumbData
+        {
+            Text = "Counter",
+            Url = "counter"
+        };
+
+        breadCrumbDatas.Add(breadCrumbData);
+
+
+        breadCrumbData = new BreadCrumbData
+        {
+            Text = "Home",
+            Url = "/"
+        };
+
+        breadCrumbDatas.Add(breadCrumbData);
+
+
+
+    }
+}

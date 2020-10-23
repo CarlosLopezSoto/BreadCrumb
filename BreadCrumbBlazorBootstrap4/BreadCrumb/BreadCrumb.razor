@@ -1,0 +1,31 @@
+﻿@using BreadCrumbBlazorBootstrap4.Data
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        @if (breadCrumbData != null)
+        {
+
+            @foreach (var item in breadCrumbData)
+            {
+                @if (item == breadCrumbData.Last())
+                {
+                    <li class="breadcrumb-item active" aria-current="page">@item.Text</li>
+
+                }
+                else
+                {
+                    <li class="breadcrumb-item"><a href="@item.Url">@item.Text</a></li>
+                }
+            }
+        }
+    </ol>
+</nav>
+
+@code {
+
+
+    [Parameter]
+    public List<BreadCrumbData> breadCrumbData { get; set; }
+
+
+}
